@@ -10,16 +10,21 @@
   </head>
   <body>
     <!-- !Inicio header + Navegador -->
-    <header class="navegacion_principal_header container-fluid">
-      <img
-        class="navegacion_principal_header_logo row"
-        src="./img/LOGOMCCLYMONT.png"
-        alt="LOGO MC CLYMONT"
-      />
-      <nav class="navbar navbar-expand-lg " >
+    <header class="navegacion_principal_header container-fluid">  
+      <!-- Inicio Navegador -->
+      <nav class="navbar navbar-expand-lg" >
         <div class="container-fluid ">
+          <img
+        class="navegacion_principal_header_logo  "
+        src="./img/LOGOMCCLYMONT.png"
+        alt="LOGO MC CLYMONT"   
+      />        
+      </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active titulo_nav" aria-current="page" href="../index.html">INICIO</a>
               </li>
@@ -63,9 +68,10 @@
     </header>
     <!-- !Fin header + Navegador -->
     <!-- !Inicio contenido contactos -->
-    <section class="seccion_contactos">
-      <article>
+    <section class="seccion_contactos container-fluid">
+      <article class="row ">
         <form class="contactos_principal" action="">
+          <div class="contactos_datos">
           <label class="contactos_descripcion" for="name"
             >Nombre y Apellido</label
           >
@@ -81,7 +87,9 @@
           <label class="contactos_descripcion" for="password">Contraseña</label>
           <input class="input" type="password" name="password" placeholder="Contraseña" />
           <label class="contactos_descripcion" for="message">Mensaje</label>
-          <textarea name="" id="" cols="50" rows="5"></textarea>
+          <textarea name="" id="" cols="40" rows="4"></textarea>            
+          </div>
+          <div class="contactos_datos">
           <label class="contactos_descripcion" for="compra">Particular</label>
           <input class="input" type="radio" name="Particular" value="Particular" />
           <label class="contactos_descripcion" for="compra">Obra Social</label>
@@ -92,14 +100,18 @@
             <option class="localidad" value="rosario">Rosario</option>
             <option class="localidad" value="funes">Funes</option>
             <option class="localidad" value="pueblo esther">Pueblo Esther</option>
-          </select>
+          </select>            
+          </div>
+          <div class="contactos_accion col-md-8 ">
           <input class="enviar"type="reset" value="Limpiar Formulario" />
           <input  class="enviar"type="button" value="No hacer nada" />
           <label class="contactos_descripcion" for="acept"
             >Acepta términos y condiciones</label
           >
           <input class="checkbox" type="checkbox" name="acept" value="si" />
-          <input class="enviar_formulario" type="submit" value="Enviar Formulario" />
+          <input class="enviar_formulario" type="submit" value="Enviar Formulario" />            
+          </div>
+
         </form>
       </article>
       <div>
@@ -107,22 +119,28 @@
       </div>
     </section>
         <!-- Inicio Footer -->
-        <footer class="footer_principal_contactos">
-          <img
-            class="footer_principal_imagen_logo"
-            src="./img/LOGOMCCLYMONT.png"
-            alt="LOGO MC CLYMONT"
-          />
-          <p class="footer_principal_texto_contacto">
-            Salta 2398 Rosario Santa Fe Tel.0341-4392110
-          </p>
-          <img
-            class="fOOter_principal_imagen_instagram"
-            src="./img/LOGOMCCLYMONTINSTAG.png"
-            alt=""
-          />
-          <p class="footer_principal_texto_instagram">Seguinos</p>
-        </footer>
+        <footer class="footer_principal container-fluid">
+          <div class="row">
+            <div class="footer_farmacia  col-md-6">
+              <img
+              class="footer_principal_imagen_logo col-md-1"
+              src="./img/LOGOMCCLYMONT.png"
+              alt="LOGO MC CLYMONT"
+            />
+            <p class="footer_principal_texto_contacto">
+              Salta 2398 Rosario Santa Fe Tel.0341-4392110
+            </p>
+            </div>
+            <div class="footer_instagram col-md-6">
+              <img
+              class="fOOter_principal_imagen_instagram col-md-1"
+              src="./img/LOGOMCCLYMONTINSTAG.png"
+              alt=""
+            />
+            <p class="footer_principal_texto_instagram">Seguinos</p>
+            </div>        
+            </div>
+          </footer>
         <!-- Fin Footer -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   </body>

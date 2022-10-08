@@ -11,16 +11,20 @@
   </head>
   <body>
     <header class="navegacion_principal_header container-fluid">  
-      <img
-        class="navegacion_principal_header_logo row"
-        src="./img/LOGOMCCLYMONT.png"
-        alt="LOGO MC CLYMONT"
-      />
       <!-- Inicio Navegador -->
-      <nav class="navbar navbar-expand-lg " >
+      <nav class="navbar navbar-expand-lg" >
         <div class="container-fluid ">
+          <img
+        class="navegacion_principal_header_logo  "
+        src="./img/LOGOMCCLYMONT.png"
+        alt="LOGO MC CLYMONT"   
+      />        
+      </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active titulo_nav" aria-current="page" href="../index.html">INICIO</a>
               </li>
@@ -63,10 +67,10 @@
       </div>
     </header>
     <!-- Fin Navegador -->
-    <main>
-      <div class="nosotros">
-        <h1 class="nosotros_titulo">Sobre nosotros</h1>
-        <p class="nosotros_contenido">
+    <main class="container-fluid">
+      <div class="nosotros row justify-content-center">
+        <h1 class="nosotros_titulo col-md-5 ">Sobre nosotros</h1>
+        <p class="nosotros_contenido col-md-10">
           Farmacia MC CLYMONT, ubicada en la zona de pichincha, Salta esquina
           Santiago (Rosario), con una trayectoria de más de 50 años en el rubro,
           es reconocida por la excelencia de servicio, la responsabilidad y la
@@ -85,22 +89,28 @@
       </div>
     </main>
         <!-- Inicio Footer -->
-        <footer class="footer_principal_nosotros">
-          <img
-            class="footer_principal_imagen_logo"
-            src="./img/LOGOMCCLYMONT.png"
-            alt="LOGO MC CLYMONT"
-          />
-          <p class="footer_principal_texto_contacto">
-            Salta 2398 Rosario Santa Fe Tel.0341-4392110
-          </p>
-          <img
-            class="fOOter_principal_imagen_instagram"
-            src="./img/LOGOMCCLYMONTINSTAG.png"
-            alt=""
-          />
-          <p class="footer_principal_texto_instagram">Seguinos</p>
-        </footer>
+        <footer class="footer_principal container-fluid">
+          <div class="row">
+            <div class="footer_farmacia  col-md-6">
+              <img
+              class="footer_principal_imagen_logo col-md-1"
+              src="./img/LOGOMCCLYMONT.png"
+              alt="LOGO MC CLYMONT"
+            />
+            <p class="footer_principal_texto_contacto">
+              Salta 2398 Rosario Santa Fe Tel.0341-4392110
+            </p>
+            </div>
+            <div class="footer_instagram col-md-6">
+              <img
+              class="fOOter_principal_imagen_instagram col-md-1"
+              src="./img/LOGOMCCLYMONTINSTAG.png"
+              alt=""
+            />
+            <p class="footer_principal_texto_instagram">Seguinos</p>
+            </div>        
+            </div>
+          </footer>
         <!-- Fin Footer -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   </body>

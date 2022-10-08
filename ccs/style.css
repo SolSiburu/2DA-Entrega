@@ -8,12 +8,11 @@ html {
 }
 
 /* FIN CARACTERISTICAS GENERALES */
-
-
 .whatsapp {
   position: fixed;
-  bottom: 40px;
-  right: 90px;
+  bottom: 60px;
+  right: 110px;
+  
 }
 .navegacion_principal_header {
   background-image: linear-gradient(
@@ -21,13 +20,14 @@ html {
     rgb(0, 208, 255),
     rgb(4, 0, 255)
   );
+  height: 120px;
   position: fixed;
-  display: grid;
-  grid-template-areas: "logo nav";
+}
+.logo_contenedor{
+  width: 10%;
 }
 .navegacion_principal_header_logo {
-  grid-area: logo;
-  width: 10%;
+  width: 12%;
   border-radius: 30%;
   padding: 6px;
 }
@@ -36,16 +36,18 @@ html {
   text-align: center;
   color: aqua;
   border-radius: 50px;
-  padding: 40px;
-  margin: 20px;
+  padding: 15px;
+  margin: 5px;
+  width: 30%;
   background-image: linear-gradient(
     to bottom,
     rgb(0, 251, 255),
     rgb(165, 164, 190)
   );
 }
+
 .nav-item {
-  font-size: 20px;
+  font-size: 10px;
   font-weight: bold;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -56,62 +58,39 @@ html {
     rgb(0, 251, 255),
     rgb(165, 164, 190)
   ) !important;
+
 }
+
 /* FIN HEADER */
+
 .main_header_principal_imagen {
-  height: 400px;
+  height: 90px;
   width: 100%;
 }
 /* FIN MAIN PRINCIPAL */
 
-/* INICIO CÓMO TRABAJAMOS */
 .como_trabajamos {
   background-image: linear-gradient(
     to bottom,
     rgb(4, 0, 255),
     rgb(0, 208, 255)
-  );
-  height: 100vh;
-  align-items: center;
-  display: grid;
+  );  
+;
 }
-
-.como_trabajamos_contenedor {
-  display: grid;
-  grid-template-areas:
-    "title title title"
-    "card_01 card_02 card_03";
-  grid-template-columns: 2fr 2fr 2fr;
-  grid-template-rows: 2fr 2fr 2fr;
-  width: 100%;
-  height: 65vh;
-  gap: 20px 35px;
-}
-
-.como_trabajamos_titulo {
+.como_trabajamos_titulo  {
   color: aqua;
   font-weight: bold;
   line-height: 3;
   background-image: linear-gradient(to bottom, #c33e92, rgb(4, 0, 255));
   border-radius: 40%;
-  text-align: center;
-  width: 20%;
-  height: 80%;
   padding: 25px;
   margin-top: 25px;
-  grid-area: title;
-  font-size: 38px;
-  align-items: center;
+  font-size: 15px;
+
 }
-.pedido_contenedor {
-  /* text-align: start; */
-  grid-area: card_01;
-  display: grid;
-  grid-template-areas:
-    "title_pedido"
-    "imagen_pedido"
-    "descripcion_pedido";
-  justify-items: center;
+.pedido_contenedor{
+  margin-left: 15px;
+  width: 100%;
 }
 .pedido_titulo {
   color: aqua;
@@ -124,42 +103,27 @@ html {
   );
   text-align: center;
   line-height: 3;
-  grid-area: title_pedido;
-  width: 50%;
   align-items: center;
-  height: 90px;
-  font-size: 25px;
+  font-size: 15px;
 }
 .pedido_imagen {
-  width: 40%;
   border-radius: 40%;
-  grid-area: imagen_pedido;
   margin: 15px;
-  transition: height 2s, width 1s;
+  width: 50%;
+  
 }
 .pedido_contenido {
   color: aqua;
-  font-size: 20px;
+  font-size: 15px;
   background-color: #043caa;
   font-weight: bold;
-  text-align: center;
   padding: 15px;
-  margin-left: 25px;
   border-radius: 40px;
-  grid-area: descripcion_pedido;
+  text-align: center;
 }
 
 .delivery_contenedor {
-  text-align: start;
-  display: grid;
-  grid-template-areas:
-    "title_delivery"
-    "imagen_delivery"
-    "descripcion_delivery";
-  grid-template-columns: 1fr;
-  grid-template-rows: 1 fr 3fr 2fr;
-  grid-area: card_02;
-  justify-items: center;
+  width: 100%;
 }
 .delivery_titulo {
   color: aqua;
@@ -171,44 +135,29 @@ html {
     rgb(4, 0, 255)
   );
   line-height: 3;
-  text-align: center;
-  grid-area: title_delivery;
-  width: 50%;
-  align-items: center;
   padding: 15px;
-  height: 90px;
-  font-size: 25px;
+  font-size: 15px;
+  text-align: center;
 }
 .delivery_imagen {
   border-radius: 40%;
-  margin: 25px;
-  width: 40%;
-  grid-area: imagen_delivery;
+  margin: 15px;
+  width: 50%;
 }
 .delivery_contenido {
   color: aqua;
-  font-size: 20px;
+  font-size: 15px;
   background-color: #043caa;
   font-weight: bold;
   border-radius: 40px;
   padding: 15px;
-  margin-left: 25px;
-  grid-area: descripcion_delivery;
   text-align: center;
+
 }
 
 .takeaway_contenedor {
-  text-align: start;
-  display: grid;
-  grid-template-areas:
-    "title_takeaway"
-    "imagen_takeaway"
-    "descripcion_takeaway";
-  grid-template-columns: 1fr;
-  grid-template-rows: 1 fr 3fr 2fr;
-  grid-area: card_03;
-  margin-left: 15px;
-  justify-items: center;
+  margin-right: 15px;
+  width: 100%;
 }
 .takeaway_titulo {
   color: aqua;
@@ -221,87 +170,47 @@ html {
   );
   text-align: center;
   line-height: 3;
-  grid-area: title_takeaway;
-  /* width: 50%; */
-  height: 90px;
   padding: 15px;
-  font-size: 25px;
+  font-size: 15px;
 }
 .takeaway_imagen {
   border-radius: 40%;
-  margin: 25px;
-  grid-area: imagen_takeaway;
-  width: 40%;
-  justify-items: center;
+  margin: 15px;
+  width: 50%;
 }
 
 .takeaway_contenido {
   color: aqua;
-  font-size: 20px;
+  font-size: 15px;
   background-color: #043caa;
   font-weight: bold;
   border-radius: 40px;
-  width: 80%;
   text-align: center;
   padding: 15px;
-  margin-left: 25px;
-  grid-area: descripcion_takeaway;
+
 }
+
 .pedilo_ahora_contenedor {
-  height: 20%;
-  width: 100%;
-  display: grid;
-  justify-content: end;
   text-align: center;
-  margin-top: 70px;
+
 }
 .pedilo_ahora {
   background-image: linear-gradient(to bottom, #c33e92, rgb(4, 0, 255));
   color: aqua;
-  font-size: 40px;
-  width: 250px;
-  padding: 40px;
-  margin: 30px;
+  font-size: 15px;
+  padding: 15px;
+  width: 50%;
   border-radius: 45px;
   font-weight: bold;
+  margin-left: 80px;
 }
 
-.pedilo_ahora:hover {
-  background-image: linear-gradient(to bottom, #c33e92, rgb(4, 0, 255));
-  color: aqua;
-  font-size: 40px;
-  margin: 30px;
-  border-radius: 45px;
-  font-weight: bold;
-  transition: all 2s;
-  height: 180px;
-  width: 200px;
-  padding: 20px;
-  align-self: center;
-}
-/* FIN CÓMO TRABAJAMOS */
-
-/* INICIO PROMOCIONES */
 .promociones_principal {
-  width: 100%;
-  height: 20%;
-  /* background-color: #3e6bc3; */
   background-image: linear-gradient(
     to bottom,
     rgb(0, 208, 255),
     rgb(4, 0, 255)
   );
-  display: grid;
-  grid-template-areas:
-    "tittle"
-    "promociones";
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-}
-
-.promociones_imagenes {
-  display: grid;
-  grid-template-areas: "promocion_01 promocion_02";
 }
 .promociones_titulo {
   background-image: linear-gradient(
@@ -314,34 +223,14 @@ html {
   text-align: center;
   color: aqua;
   border-radius: 80%;
-  width: 20%;
-  height: 65%;
-  grid-area: tittle;
-  padding: 50px;
-  margin: 50px;
-  font-size: 35px;
-  animation-name: promociones;
-  animation-delay: 1s;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  opacity: 0;
-  transition: 5s;
-  justify-self: center;
+  padding: 5px;
+  font-size: 15px;
+  
 }
 
-.promociones_imagen01 {
-  height: 240px;
-  grid-area: promocion_01;
-  width: 100%;
-}
-.promociones_imagen_2x1 {
-  height: 240px;
-  grid-area: promocion_02;
-  width: 100%;
-}
 /* FIN PROMOCIONES */
 
-/* INICIO FOOTER */
+/* FIN CÓMO TRABAJAMOS */
 .footer_principal {
   background-image: linear-gradient(
     to bottom,
@@ -350,94 +239,36 @@ html {
   );
   color: white;
   font-size: medium;
-  width: 100%;
   padding: 30px;
-  display: grid;
-  height: 300px;
-  grid-template-areas: "farmacia instagram";
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 2fr;
+
 }
 
-.footer_farmacia {
-  display: grid;
-  width: 100%;
-  grid-area: farmacia;
-  grid-template-areas:
-    "logo_farmacia"
-    "datos_farmacia";
-  grid-template-rows: 1fr 1fr;
-}
 .footer_principal_imagen_logo {
-  width: 112px;
-  height: 106px;
-  margin: 20px;
   border-radius: 40%;
-  grid-area: logo_farmacia;
+  width: 10%;
 }
 .footer_principal_texto_contacto {
   color: aqua;
   font-weight: bold;
-  width: 30%;
-  margin: 25px;
-  font-size: 20px;
-  grid-area: datos_farmacia;
+  font-size: 10px;
+
 }
 
-.footer_instagram {
-  display: grid;
-  width: 100%;
-  grid-template-areas:
-    "logo_instagram"
-    "datos_instagram";
-  grid-template-rows: 1fr 1fr;
-  grid-area: instagram;
-}
 .fOOter_principal_imagen_instagram {
-  width: 112px;
-  height: 106px;
   border-radius: 40%;
-  grid-area: logo_instagram;
+  width: 10%;
+
 }
 .footer_principal_texto_instagram {
   color: aqua;
   font-weight: bold;
-  width: 30%;
-  font-size: 20px;
-  grid-area: datos_instagram;
+  font-size: 10px
 }
-
-.footer_principal_nosotros {
-  background-color: #043caa;
-  color: white;
-  font-size: medium;
-  width: 100%;
-  padding: 30px;
-  display: grid;
-  height: 200px;
-  grid-template-areas: "logo_farmacia datos_farmacia logo_instagram datos_instagram";
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 2fr;
-  margin-top: 600px;
-}
-
-.footer_principal_contactos {
-  background-color: #043caa;
-  color: white;
-  font-size: medium;
-  width: 100%;
-  padding: 30px;
-  display: grid;
-  grid-template-areas: "logo_farmacia datos_farmacia logo_instagram datos_instagram";
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 2fr;
-}
-
 /* INICIO PAGINA NOSOTROS */
+
 .nosotros {
-  width: 100%;
+  height: 90vh;
   background-color: #c33e92;
-  height: 400px;
   background-image: linear-gradient(
     to right,
     rgb(255, 0, 166),
@@ -446,26 +277,25 @@ html {
 }
 .nosotros_titulo {
   line-height: 3;
-  font-size: 45px;
+  font-size: 17px;
   color: aqua;
   text-align: center;
-  padding-top: 250px;
+  padding-top: 150px;
 }
 .nosotros_contenido {
   font: bold;
-  font-size: 20px;
+  font-size: 10px;
   color: #333333;
   font-weight: bold;
-  line-height: 3;
-  margin: 150px 50px 150px 50px;
+  margin: 10px 50px 100px 50px;
   text-align: center;
 }
 /* FIN PAGINA NOSOTROS */
 
 /* INICIO PAGINA CONTACTOS */
 .seccion_contactos {
-  padding-top: 300px;
-  font: 25px;
+  padding-top: 150px;
+  font: 15px;
   background-image: linear-gradient(
     to right,
     rgb(255, 0, 166),
@@ -476,14 +306,487 @@ html {
 .contactos_principal {
   line-height: 20px;
 }
+.contactos_datos{
+  margin: 10px;
+  padding: 10px;
+}
 .contactos_descripcion {
   color: white;
   font-weight: bold;
+  font-size: 10px;
+  padding: 10px;
+}
+.consultanos_contactos {  
+  text-align: center;
+  background-color: aqua;
+  border-radius: 20%;
+  font-size: 10px;
+  filter: drop-shadow(4px 7px 2px rgb(94, 93, 93));
+  width: 50%;
+  margin-top: 30px;
+  margin-left: 150px;
+
+}
+
+.enviar {
+  font-size: 10px;
+  margin-top: 10px;
+  padding: 20px;
+  color: white;
+  border-radius: 50%;
+  font-weight: bold;
+  background-color: #c33e92;
+}
+
+.enviar_formulario {
+  font-size: 15px;
+  padding: 20px;
+  color: white;
+  border-radius: 50%;
+  font-weight: bold;
+  background-color: #c33e92;
+
+}
+
+.input {
+  font-size: 15px;
+}
+
+.localidad {
+  font-size: 10px;
+}
+.checkbox {
+  width: 25px;
+  height: 25px;
+}
+/* FIN PAGINA CONTACTOS */
+/* INICIO PAGINA CUIDADO PERSONAL */
+
+.cuidadopersonal_principal {
+  text-align: center;
+  line-height: 6;
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 200, 255),
+    rgb(94, 93, 93)
+  );
+
+}
+.cuidadopersonal_subtitulo {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  color: aliceblue ;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 25px;
+  filter: drop-shadow(4px 7px 2px rgb(94, 93, 93));
+}
+
+.seccion_cabello {
+  padding-top: 100px;
+  padding-left: 25px;
+}
+.cabello_imagen {
+  width: 150px;
+  height: 150px;
+  border-radius: 30px;
+}
+.seccion_higiene_bucal {
+  padding-top: 200px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+}
+.higiene_bucal_imagen {
+  width: 150px;
+  height: 150px;
+  border-radius: 30px;
+}
+
+.seccion_higiene_personal {
+  padding-top: 100px;
+  padding-bottom: 25px;
+
+}
+.higiene_personal_imagen {
+  width: 150px;
+  height: 150px;
+  border-radius: 30px;
+}
+.cuidado_personal_p{
+  border-radius: 40%;
+  font-size: 18px;
+  font-weight: bold;
+  filter: drop-shadow(4px 7px 2px rgb(94, 93, 93));
+  color: aliceblue ;
+
+}
+
+
+/* INICIO PAGINA MEDICAMENTOS */
+
+.medicamentos_principal {
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 0, 166),
+    rgb(0, 200, 255)
+  );
+  padding-bottom: 25px;
+  height: 1000hv;
+}
+
+.medicamentos_titulo_os {
   font-size: 20px;
+  color: white;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 40%;
+  background-color: aqua;
+  text-align: center;
+  margin-top: 150px;
+}
+.medicamentos_titulo_particulares {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  padding: 15px;
+  background-color: #c33e92;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 40%;
+}
+
+.medicamentos_obrasocial_imagen {
+  width: 250px;
+  border-radius: 30%;
+}
+.medicamentos_particular_imagen {
+  width: 250px;
+  border-radius: 30%;
+
+}
+.descripcion_medicamentos {
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+  filter: drop-shadow(4px 7px 2px rgb(94, 93, 93));
+  text-align: center;
+  
+}
+
+/* FINAL PAGINA CUIDADO PERSONAL */
+
+@media (min-width:576px) {
+
+.navegacion_principal_header_logo {
+  width: 8%;
+}
+
+.titulo_nav {
+  width: 15%;
+}
+
+/* FIN HEADER */
+.main_header_principal_imagen {
+  height: 250px;
+  width: 100%;
+  
+}
+/* FIN MAIN PRINCIPAL */
+
+/* INICIO CÓMO TRABAJAMOS */
+
+
+.como_trabajamos_contenedor {
+  gap: 20px 35px;
+}
+.como_trabajamos_titulo  {
+  font-size: 20px;
+
+}
+.pedido_contenedor{
+  margin-left: 15px;
+}
+
+.pedido_titulo {
+  font-size: 25px;
+}
+
+.pedido_contenido {
+  font-size: 20px;
+
+}
+
+.delivery_contenedor {
+  text-align: start;
+}
+.delivery_titulo {
+  font-size: 25px;
+  
+}
+
+.delivery_contenido {
+  font-size: 20px;
+
+}
+
+.takeaway_contenedor {
+  margin-right: 15px;
+}
+.takeaway_titulo {
+  font-size: 25px;
+}
+
+.takeaway_contenido {
+  font-size: 20px;
+}
+
+.pedilo_ahora {
+  font-size: 25px;
+}
+.promociones_principal {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(0, 208, 255),
+    rgb(4, 0, 255)
+  );
+}
+.promociones_titulo {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(0, 208, 255),
+    rgb(4, 0, 255)
+  );
+  font-weight: bold;
+  line-height: 3;
+  text-align: center;
+  color: aqua;
+  border-radius: 80%;
+  padding: 10px;
+  font-size: 25px;
+  
+}
+
+/* FIN PROMOCIONES */
+
+/* FIN CÓMO TRABAJAMOS */
+
+/* INICIO PAGINA NOSOTROS */
+
+
+.nosotros_titulo {
+  font-size: 35px;
+  padding-top: 250px;
+}
+.nosotros_contenido {
+  font-size: 15px;
+  margin: 150px 50px 150px 50px;
+  
+}
+/* FIN PAGINA NOSOTROS */
+/* INICIO FOOTER */
+
+/* FIN FOOTER */
+
+/* INICIO PAGINA CONTACTOS */
+.seccion_contactos {
+  padding-top: 200px;
+  font: 25px;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 0, 166),
+    rgb(0, 200, 255)
+  );
+  height: 1000px;
+}
+.contactos_principal {
+  line-height: 20px;
+}
+.contactos_datos{
+  margin: 10px;
+  padding: 10px;
+}
+.contactos_descripcion {
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
   padding: 17px;
 }
-.consultanos_contactos {
+
+.enviar {
+  font-size: 15px;
+  margin-top: 15px;
+  padding: 20px;
+}
+
+.enviar_formulario {
+  font-size: 15px;
+  margin-top: 15px;
+  margin-left: 25px;
+  padding: 25px;
+  height: 100px;
+}
+
+/* FIN PAGINA CONTACTOS */
+
+/* INICIO PAGINA CUIDADO PERSONAL */
+
+.cuidado_personal_p{
+  font-size: 32px;
+
+}
+
+/* FINAL PAGINA CUIDADO PERSONAL */
+
+/* INICIO PAGINA MEDICAMENTOS */
+
+.medicamentos_principal {
+  height: 1000px;
+}
+
+.medicamentos_titulo_os {
+  font-size: 30px;
+
+}
+.medicamentos_titulo_particulares {
+  font-size: 30px;
+
+}
+
+.medicamentos_obrasocial_imagen {
   width: 250px;
+  border-radius: 30%;
+  margin-top: 100px;
+}
+.medicamentos_particular_imagen {
+  width: 250px;
+  border-radius: 30%;
+  margin-top: 100px;
+}
+.descripcion_medicamentos {
+  font-size: 20px;
+  
+}
+
+}
+
+@media (min-width: 820px) {
+
+.whatsapp {
+  bottom: 40px;
+  right: 90px;
+}
+
+.navegacion_principal_header {
+  height: 130px;
+
+  }
+.navegacion_principal_header_logo {
+  width: 100px;
+}
+
+.titulo_nav {
+  padding: 40px;
+  margin: 20px;
+  width: 88%;
+}
+.nav-item {
+  font-size: 20px;
+}
+
+/* FIN HEADER */
+.main_header_principal_imagen {
+  height: 500px;
+  
+}
+/* FIN MAIN PRINCIPAL */
+
+
+/* INICIO CÓMO TRABAJAMOS */
+.como_trabajamos_titulo  {
+  font-size: 38px;
+
+}
+
+.pedilo_ahora_contenedor {
+  text-align: center;
+
+}
+.pedilo_ahora {
+  font-size: 40px;
+  padding: 20px;
+  margin-right: 45px;
+}
+
+.pedilo_ahora:hover {
+  background-image: linear-gradient(to bottom, #c33e92, rgb(4, 0, 255));
+  color: aqua;
+  font-size: 40px;
+  border-radius: 45px;
+  font-weight: bold;
+  transition: all 2s;
+  padding: 40px;
+  margin-right: 20px;
+  align-self: center;
+}
+/* FIN CÓMO TRABAJAMOS */
+
+
+/* INICIO PROMOCIONES */
+
+.promociones_titulo {
+  padding: 50px;
+  margin: 50px;
+  font-size: 35px;
+  animation-name: promociones;
+  animation-delay: 1s;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  opacity: 0;
+  transition: 5s;
+}
+
+/* FIN PROMOCIONES */
+
+/* INICIO FOOTER */
+
+.footer_principal_texto_contacto {
+  font-size: 20px;
+
+}
+
+.footer_principal_texto_instagram {
+  font-size: 20px
+}
+
+/* INICIO PAGINA NOSOTROS */
+
+.nosotros_titulo {
+  font-size: 45px;
+
+}
+.nosotros_contenido {
+  font-size: 20px;
+  line-height: 3;
+
+}
+/* FIN PAGINA NOSOTROS */
+
+/* INICIO PAGINA CONTACTOS */
+.seccion_contactos {
+  padding-top: 300px;
+  height: 1400px;
+}
+
+.contactos_datos{
+  margin: 25px;
+  padding: 17px;
+}
+.contactos_descripcion {
+  font-size: 20px;
+
+}
+.consultanos_contactos {
   text-align: center;
   background-color: aqua;
   border-radius: 20%;
@@ -492,7 +795,12 @@ html {
   animation-name: animacion_contactos;
   animation-duration: 2s;
   animation-iteration-count: infinite;
-  margin-top: 50px;
+  width: 30%;
+  margin-top: 200px;
+  margin-left: 50px;
+}
+.contactos_accion{
+margin-left: 50px;
 }
 
 @keyframes animacion_contactos {
@@ -511,23 +819,11 @@ html {
 
 .enviar {
   font-size: 20px;
-  margin-top: 15px;
-  padding: 20px;
-  color: white;
-  border-radius: 50%;
-  font-weight: bold;
-  background-color: #c33e92;
 }
 
 .enviar_formulario {
   font-size: 25px;
-  margin-top: 15px;
-  margin-left: 25px;
   padding: 25px;
-  color: white;
-  border-radius: 50%;
-  font-weight: bold;
-  background-color: #c33e92;
   height: 100px;
   animation-duration: 3s;
   animation-name: aparecer;
@@ -557,83 +853,42 @@ html {
 
 .localidad {
   font-size: 25px;
-}
-.checkbox {
-  width: 25px;
-  height: 25px;
-}
+
+  }
 /* FIN PAGINA CONTACTOS */
 
 /* INICIO PAGINA CUIDADO PERSONAL */
 
 .cuidadopersonal_principal {
-  font: 400;
-  text-align: center;
-  line-height: 6;
-  background-image: linear-gradient(
-    to right,
-    rgb(0, 200, 255),
-    rgb(0, 119, 255)
-  );
-  display: grid;
-  grid-template-areas: "card_cabello card_bucal card_personal";
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  height: 800px;
+  font: 400px; 
+  height: 1300px;
+
 }
 .cuidadopersonal_subtitulo {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-bottom: 15px;
-  color: aqua;
-  border-radius: 50%;
-  font-weight: bold;
   font-size: 35px;
-  filter: drop-shadow(4px 7px 2px rgb(94, 93, 93));
+
 }
 
-.seccion_cabello {
-  height: 50%;
-  padding-top: 100px;
-  /* padding-bottom: 20px; */
-  padding-left: 25px;
-  width: 60%;
-  grid-area: card_cabello;
-  justify-self: center;
-}
 .cabello_imagen {
   width: 300px;
   height: 250px;
-  border-radius: 30px;
+
 }
-.seccion_higiene_bucal {
-  height: 50%;
-  padding-top: 200px;
-  padding-bottom: 25px;
-  padding-left: 25px;
-  width: 60%;
-  grid-area: card_bucal;
-  justify-self: center;
-}
+
 .higiene_bucal_imagen {
   width: 300px;
   height: 250px;
-  border-radius: 30px;
+
 }
 
-.seccion_higiene_personal {
-  height: 50%;
-  padding-top: 100px;
-  padding-bottom: 25px;
-  padding-left: 25px;
-  width: 60%;
-  grid-area: card_personal;
-  justify-self: center;
-}
 .higiene_personal_imagen {
   width: 300px;
   height: 250px;
-  border-radius: 30px;
+
+}
+.cuidado_personal_p{
+  font-size: 35px;
+
 }
 
 /* FINAL PAGINA CUIDADO PERSONAL */
@@ -641,77 +896,27 @@ html {
 /* INICIO PAGINA MEDICAMENTOS */
 
 .medicamentos_principal {
-  /* width: 100%; */
   background-image: linear-gradient(
     to right,
     rgb(255, 0, 166),
     rgb(0, 200, 255)
   );
-  display: grid;
-  grid-template-areas: "obrasocial particulares";
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  justify-items: center;
-  padding-bottom: 25px;
 }
 
-.obra_social {
-  grid-area: obrasocial;
-  display: grid;
-  grid-template-areas:
-    "foto_obrasocial"
-    "titulo_obrasocial";
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1 fr;
-  width: 50%;
-}
-.particulares {
-  grid-area: particulares;
-  display: grid;
-  grid-template-areas:
-    "foto_particulares"
-    "titulo_particulares";
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1 fr;
-  width: 50%;
-}
-.medicamentos_titulo_os {
-  font-size: 30px;
-  color: white;
-  font-weight: bold;
-  padding: 15px;
-  border-radius: 40%;
-  grid-area: titulo_obrasocial;
-  background-color: aqua;
-  text-align: center;
-  margin: 25px;
-}
-.medicamentos_titulo_particulares {
-  font-size: 30px;
-  color: white;
-  font-weight: bold;
-  padding: 15px;
-  border-radius: 40%;
-  grid-area: titulo_particulares;
-  background-color: #c33e92;
-  text-align: center;
-  margin: 25px;
-}
 
 .medicamentos_obrasocial_imagen {
   width: 500px;
   border-radius: 30%;
   margin-top: 300px;
-  grid-area: foto_obrasocial;
 }
 .medicamentos_particular_imagen {
   width: 500px;
   border-radius: 30%;
   margin-top: 300px;
-  grid-area: foto_particulares;
 }
 .descripcion_medicamentos {
   font-size: 30px;
-  color: white;
-  font-weight: bold;
+
+}
+
 }
